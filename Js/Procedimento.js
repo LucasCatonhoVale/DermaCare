@@ -6,34 +6,34 @@ const procedi = [
     nome: "Botox", 
     desc: "Suavize rugas e linhas finas com rapidez", 
 
-    imagem: "../img/botox.jpg" 
+    imagem: "img/botox.jpg" 
   },
   { 
     nome: "Limpeza de Pele", 
     desc: "Pele renovada com hidratação profunda", 
  
-    imagem: "../img/lipeza.jpg" 
+    imagem: "img/lipeza.jpg" 
   },
   { 
     nome: "Preenchimento Facial", 
     desc: "Que nada de bigode chinês", 
-    imagem: "../img/prenchimento.jpg" 
+    imagem: "img/prenchimento.jpg" 
   },
   { 
     nome: "Tratamento para Acne", 
     desc: "Ideal para reduzir acne e oleosidade", 
 
-   imagem: "../img/acen.jpg" 
+   imagem: "img/acen.jpg" 
   },
   { 
     nome: "Peeling Químico", 
     desc: "Renovação celular com controle de manchas", 
-    imagem: "../img/Peeling.jpg" 
+    imagem: "img/Peeling.jpg" 
   },
   { 
     nome: "Laser Dermatológico", 
     desc: "Tratamento moderno para manchas e sinais", 
-    imagem: "../img/Laser.jpg" 
+    imagem: "img/Laser.jpg" 
   }
 ];
 // ---------------------------
