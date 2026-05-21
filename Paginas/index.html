@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DermaVita</title>
+    <link rel="stylesheet" href="../Css/estilo.css">
+    <link rel="icon" type="image/png" href="../img/transp.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Menu-->
+    <header>
+        <div id="logo">
+            <img src="../img/logofina.png" id="imgLogo" alt="Logo do Topo">
+        </div>
+        <div id="menu">
+            <nav>
+                <li><a href="#menu">Inicio</a></li>
+                <li><a href="#Procedimentos ">Procedimento</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><button onclick="enviarMensagem('Agendar')">Agendar pelo WhatsApp</button></li>
+            </nav>
+        </div>
+    </header>
+   <main>
+        <!--Destaque-->
+        <section id="Inicio" >
+            <div id="destaque">
+                <img src="../img/modeloTransparetne.png" alt="modelo">
+            </div>
+
+            <div id="eslogam">
+                <h1 style="font-family: 'Playfair Display', serif;">Sua pele  saudavel e <br> radiante começa aqui</h1>
+                <div class="linha"></div>
+                <h3>Tratamentos dermatológicos com segurança e tecnologia</h3>
+                <button id="bt" onclick="enviarMensagem('faleConNosco')" style="font-family: 'Poppins', sans-serif;">Fale conosco no WhastApp</button>
+            </div>
+        </section>
+        <!--Procedimentos-->
+        <section id="Procedimentos">
+            <div class="procedimentos">
+                <div class="linha2"></div>
+                <h1 id="pro">Nossos Procedimentos</h1>
+                <div class="linha3"></div>
+                <!-- LISTA DOS CARDS -->
+                <div id="procedi" class="procedi"></div>
+
+                <!-- MENSAGEM SE NÃO TIVER NADA -->
+                <div id="noResults" style="display:none; text-align:center; margin-top:20px;">
+                    Nenhum procedimento encontrado.
+                </div>
+            </div>
+        </section>
+        <!--Porque nos escolher-->
+        <section>
+            <div id="curiosidade">
+                <div class="linhascuriosidade1"></div>
+                <h1>Por que nos escolher?</h1>
+                <div class="linhascuriosidades2"></div>
+               <div id="imagens">
+                    <div class="item">
+                        <img src="../img/profisonal.png" alt="profissional">
+                        <h3>Profissionais Especializados</h3>
+                    </div>
+
+                    <div class="item">
+                        <img src="../img/coracao.png" alt="coração">
+                        <h3>Atendimento Personalizado</h3>
+                    </div>
+
+                    <div class="item">
+                        <img src="../img/tempo.png" alt="tempo">
+                        <h3>Tecnologia Avançada</h3>
+                    </div>
+
+                    <div class="item">
+                        <img src="../img/natural.png" alt="natural">
+                        <h3>Resultados Naturais</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Sobre Nos-->
+        <section id="Sobre">
+            <div id="SobreNos">
+                    <div class="linhasNos1"></div>
+                     <h1>Sobre Nós</h1>
+                    <div class="linhasNos2"></div>
+                    <div id="nos">
+                            <p>
+                                    Cuidamos da sua pele com tecnologia, segurança e um atendimento humanizado. Nossa clínica é especializada em tratamentos dermatológicos personalizados, sempre focados na sua saúde, bem-estar e autoestima.
+                                    Contamos com profissionais qualificados e técnicas modernas para oferecer resultados naturais e eficazes. Nosso compromisso é proporcionar uma experiência acolhedora e de qualidade em cada atendimento.
+                            </p>
+                    </div>
+                    <div id="sobreFoto">
+                        <img src="../img/sobre.png" alt="Profisonal">
+                    </div>
+            </div>
+        </section>
+        <!--Opnião-->
+        <section id="opniao">
+            <div class="linhasO"></div>
+            <h1>Avaliações</h1>
+            <div class="linhaso2"></div>
+            <div class="opniaoes">
+                <img src="../img/professor.png"  class="opFotos" alt="foto da promeira avaliação">
+                <h2>Sergio Professor</h2>
+                <div class="linhaop"></div>
+                <p>
+                    Excelente clínica! Ambiente limpo, organizado e atendimento profissional. Fiz um tratamento de pele e fiquei muito satisfeito com o resultado. Com certeza voltarei outras vezes.
+                </p>
+                <img src="../img/estrelas.png" class="av" alt="estrelaAvaliação">
+
+
+            </div>
+            <div class="opniaoes">
+                <img src="../img/carla.png"   class="opFotos" alt="foto da promeira avaliação">
+                <h2>Carla Santos</h2>
+                <div class="linhaop"></div>
+                <p>
+                    Fui muito bem atendida desde a recepção até a consulta. A dermatologista foi super atenciosa, explicou tudo com calma e me passou muita confiança. Já estou vendo resultados no meu tratamento. Recomendo demais!
+                </p>
+                <img src="../img/estrelas.png" class="av" alt="estrelaAvaliação">
+
+            </div>
+            <div class="opniaoes">
+                <img src="../img/raquel.png"  class="opFotos" alt="foto da promeira avaliação">
+                <h2>Raquel Soares</h2>
+                <div class="linhaop"></div>
+                <p>
+                    Amei minha experiência! Equipe muito educada e cuidadosa. Fiz um procedimento estético e o resultado ficou natural e lindo. Me senti muito bem acolhida. Super indico
+                </p>
+                <img src="../img/estrelas.png" class="av" alt="estrelaAvaliação">
+
+            </div>
+        </section>
+        <section id="final">
+            <div class="linhaS"></div>
+            <h1>Pronta para cuidar  da sua pele?</h1>
+            <div class="linhaS2"></div>
+            <button><img src="../img/what.png"  alt="icone zap">Chama no WhatsApp</button>
+        </section>
+   </main>
+   <footer>
+        <h3> Rua Joaquina,12-Sp | (11)954472238 | @dermavita | Atendimento Seg a Sex das 9h as 18h</h3>
+   </footer>
+   <script src="../Js/Procedimento.js" defer></script>
+   <script src="../Js/whats.js" defer></script>
+</body>
+</html>

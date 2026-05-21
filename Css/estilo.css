@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Menu*/
+header{
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+}
+#imgLogo{
+    height: 300px;
+    margin-top: -100px;
+    margin-left: 80px;
+}
+#menu nav{
+    position: absolute;
+    margin-left: 750px;
+    width: 500px;
+    height: 100px;
+    margin-top: -110px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid transparent;
+    list-style: none;
+    display: flex;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+nav a:hover{
+    text-decoration:underline;
+    opacity: 0.7;
+    font-size: 25px;
+}
+button{
+    height: 40px;
+    width: 200px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: aliceblue;
+    background-image: linear-gradient(  to right,#4ADE80,#22C55E, #16A34A);
+    font-family: 'Poppins', sans-serif;
+}
+button:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/*Eslogam*/
+#Inicio{
+    width: 100%;
+    height: 588px;
+    background-image: url(../img/fundo2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#destaque{ 
+    border: 1px solid transparent; 
+    float: right; 
+    width: 700px;
+    height: 587px; 
+}
+#destaque img{ 
+    border: 1px solid transparent;
+    height: 587px; 
+    width: 600px;  
+}
+
+#eslogam{ 
+    width: 650px; 
+    height: 587px; 
+    border: 1px solid transparent; 
+} 
+h1{ 
+    position: absolute; 
+    margin-top: 160px; 
+    margin-left: 100px; 
+    color: black; 
+    font-size: 49px; 
+    text-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+} 
+.linha{ 
+    position: absolute; 
+    width: 500px; 
+    height: 1px; 
+    opacity: 75%;
+    background: linear-gradient( to left,#fff,#000,#000,#fff);   
+     margin-top: 300px; 
+    margin-left: 100px; 
+} 
+h3{ 
+    position: absolute; 
+    margin-top: 310px; 
+    font-size: 20px; 
+    color: black; 
+    margin-left: 100px;
+}
+#bt{
+    width: 300px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 100px;
+}
+
+/*procedimento*/
+#Procedimentos{
+    width: 100%;
+    height: 750px;
+    border:1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+#pro{
+    font-size: 36px;
+    margin-top: -80px;
+    margin-left: 500px;
+}
+
+.procedi {
+    margin: 50px auto;
+    width: 60%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 110px;
+    align-items: stretch;
+}
+
+
+.procedi-card {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: #ebd4c8;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    height: 100%;
+}
+
+.procedi-card .linhaS{
+        width: 150px;
+        margin-top: 170px;
+        margin-left: -5px;
+        background: linear-gradient( to left,#fff,#000,#000); 
+}
+.procedi-card:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+
+.procedi-card img {
+    width: 257px;
+    margin-left: -17px;
+    margin-top: -15px;
+    height: 150px;
+     border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 10px;
+}
+
+
+.procedi h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    margin-top: 143px;
+    margin-left: -5px;
+}
+.linha2, .linha3{ 
+    position: absolute; 
+    width: 350px; 
+    height: 1px; 
+    background: 
+    linear-gradient( to left,#000,#000,#fff); 
+    margin-top: -60px; margin-left: 130px; 
+}
+.linha3{ 
+    margin-left: 850PX; 
+    margin-top: -55px; 
+    background: linear-gradient( to left,#fff ,#000,#000); 
+}
+
+.procedi .desc {
+    font-size: 14px;
+    color: #444;
+    flex-grow: 1;
+}
+
+.desc{
+    margin-top: 30px;
+    text-align: justify;
+    margin-left:-5px;
+}
+
+
+.procedi button {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(  to right,#4ADE80,#22C55E, #16A34A);
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.procedi button:hover {
+    opacity: 50%;
+}
+
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1100px;
+    padding: 10px;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.search-results .prod-card {
+    background: #fff7c2;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    transition: all 0.3s ease;
+}
+
+/*Curiosidade*/
+#curiosidade{
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+    background: #DCC2B5;
+    border: 1px solid transparent;
+    opacity: 50%;
+}
+
+#curiosidade h1{
+    color: #16A34A;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 580px;
+}
+#imagens{
+    border: 1px solid transparent;
+    width: 900px;
+    height: 100px;
+    margin: 10px auto;
+    margin-left: 220px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* cada item */
+.item{
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+    border: 1px solid transparent;
+    width: 200px;
+}
+
+/* imagem */
+.item img{
+    width: 110px;
+    margin-left: -10px;
+    height: 80px;
+}
+
+/* texto */
+.item h3{
+    font-size: 14px;
+    margin: 0;
+    margin-left: 75px; 
+    text-align: center;
+
+}
+.linhascuriosidade1, .linhascuriosidades2{
+    position: absolute; 
+    width: 350px; 
+    height: 1px; 
+    background: linear-gradient( to left,#000,#000,#fff); 
+    margin-top: 31px;
+    margin-left: 215px; 
+}
+.linhascuriosidades2{
+    margin-left: 779PX;
+    margin-top: 32px;
+    background: linear-gradient( to left,#fff ,#000,#000); 
+}
+/*Sobre nos*/
+
+#SobreNos{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/fundo2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#nos{
+    opacity: 50%;
+    position: absolute;
+    width: 650px;
+    font-size: 25px;
+    text-align: justify;
+    height: 200px;
+    margin-top:200px ;
+    margin-left: 500px;
+}
+
+#SobreNos h1{
+    color: #16A34A;
+    opacity: 50%;
+    font-size: 35px;
+    margin-top: 110px;
+    margin-left: 725px;
+}
+.linhasNos1, .linhasNos2{ 
+    position: absolute; 
+    width: 200px; 
+    height: 1px; 
+    margin-top: 130px; 
+    margin-left: 510px; 
+    opacity: 50%; 
+    background: linear-gradient( to left,#000,#000,#fff); 
+} 
+.linhasNos2 { 
+    opacity: 50%; 
+    width: 200px; 
+    margin-left: 900PX; 
+    margin-top: 130px; 
+    background: linear-gradient( to left,#fff ,#000,#000); 
+}
+#sobreFoto img{
+    height: 490px;
+    margin-left: -100px;
+    margin-top: 10px;
+}
+
+/*opnião*/
+
+#opniao{
+    width: 100%;
+    height: 600px;
+    border: 1px solid transparent;
+}
+
+.opniaoes{
+    width: 300px;
+    height: 300px;
+    border: 1px solid transparent;
+    float: left;
+    border-radius: 15px;
+    margin-left: 110px;
+    margin-top: 175px;
+    box-shadow: 0 8px 20px rgba(0,0,0,1.15);
+    transition: background 0.3s;
+}
+.opniaoes:hover{
+     transition: background 0.3s;
+}
+
+.opFotos{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #DCC2B5;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.opniaoes h2{
+    position: absolute;
+    margin-left: 65px;
+    margin-top:-40px ;
+}
+.linhaop{
+    width: 200px;
+    background: linear-gradient( to left,#fff,#DCC2B5,#DCC2B5); 
+    height: 1px;
+    margin-top: -10px;
+    margin-left:65px ;
+}
+.linhasO, .linhaso2{
+    position: absolute; 
+    width: 300px;
+    height: 1px; 
+    background: linear-gradient( to left,#000,#000,#fff); 
+    margin-top: 90px;
+    margin-left: 230px; 
+}
+.linhaso2{
+     opacity: 50%;
+     width: 300px;
+     margin-left: 800PX;
+     margin-top: 90px;
+     background: linear-gradient( to left,#fff ,#000,#000); 
+
+}
+.opniaoes p{
+    width: 250px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 23px;
+    height: 100px;
+    border: 1px solid transparent;
+}
+.av{
+    width: 150px;
+    margin-left: 130px;
+    margin-top: 30px;
+
+}
+
+#opniao h1{
+    margin-top: 55px;
+    margin-left: 555px;
+    position: absolute;
+    color: #DCC2B5;
+}
+
+
+
+/*sessão final*/
+#final{
+    width: 100%;
+    height: 150px;
+    border: 1px solid transparent;
+     background-image: url(../img/fundo2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#final img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: -50px;
+    margin-top: -2px;
+}
+.linhaS, .linhaS2 {
+    position: absolute; 
+    width: 300px;
+    opacity: 50%;
+    height: 1px; 
+    background: linear-gradient( to left,#000,#000,#fff); 
+    margin-top: 35px;
+    margin-left: 180px; 
+}
+.linhaS2 {
+     opacity: 50%;
+     width: 300px;
+     color: #fff;
+     margin-left: 850PX;
+     margin-top: 35px;
+     background: linear-gradient( to left,#fff ,#000,#000); 
+
+}
+
+
+#final h1{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 496px;
+}
+#final button{
+    position: absolute;
+    width: 350px;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-left: 490px;
+    border: 1px solid #fff;
+}
+/*footer*/
+footer{
+    width: 100%;
+    height: 30px;
+    border: 1px solid transparent;
+    background: #DCC2B5;
+}
+footer h3{
+    color: #fff;
+    position: absolute;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-left: 350px;
+    margin-top: 6px;
+}
